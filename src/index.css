@@ -1,8 +1,8 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&family=Raleway:wght@300;400;500;600;700&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&family=Raleway:wght@300;400;500;600;700&display=swap');
 
 @layer base {
   :root {
@@ -44,8 +44,8 @@
     --dark-surface: 20 12% 12%;
     --dark-elevated: 20 10% 16%;
 
-    --font-display: 'Playfair Display', serif;
-    --font-body: 'Raleway', sans-serif;
+    --font-display: "Playfair Display", serif;
+    --font-body: "Raleway", sans-serif;
 
     --sidebar-background: 20 14% 8%;
     --sidebar-foreground: 40 20% 90%;
@@ -68,14 +68,24 @@
     font-family: var(--font-body);
   }
 
-  h1, h2, h3, h4, h5, h6 {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     font-family: var(--font-display);
   }
 }
 
 @layer utilities {
   .text-gradient-gold {
-    background: linear-gradient(135deg, hsl(38 80% 65%), hsl(38 70% 50%), hsl(38 60% 35%));
+    background: linear-gradient(
+      135deg,
+      hsl(38 80% 65%),
+      hsl(38 70% 50%),
+      hsl(38 60% 35%)
+    );
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -99,6 +109,11 @@
 
   .divider-gold {
     height: 2px;
-    background: linear-gradient(90deg, transparent, hsl(38 70% 50%), transparent);
+    background: linear-gradient(
+      90deg,
+      transparent,
+      hsl(38 70% 50%),
+      transparent
+    );
   }
 }
